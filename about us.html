@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete University website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;0,800;0,900;1,400&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
+
+    
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="sub-header" >
+        <Nav>
+            
+            <a id="LOGO" href="index.html">UV <span>LOGO</span> </a>
+             <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" aria-hidden="true"onclick="hideMenu()"></i>
+                  <ul >
+                      <li> <a href="#header">HOME</a> </li>
+                      <li> <a href="">ABOUT</a> </li>
+                      <li> <a href="#course">COURSE</a> </li>
+                      <li> <a href="">BLOG</a>   </li>
+                      <li> <a href="">CONTACT</a> </li>
+                  </ul>
+             </div>
+             <i class="fa fa-bars" aria-hidden="true"onclick="showMenu()"></i>
+        </Nav>
+
+          
+          <div class="about-text">
+            <h1>About Us</h1>
+          </div>
+
+     </div>
+     <section class="about-us">
+            <div class="row">
+                  <div class="about-col">
+                       <h1> We are the world's largest University </h1>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores fugit dolorem, assumenda dicta temporibus corporis possimus magni. Sed iste laboriosam ullam voluptate alias fugit minima modi facilis autem corrupti ratione totam, nostrum, illum deserunt nulla maiores minus tempore voluptatum, enim odio accusamus. Deleniti accusamus dolor accusantium quisquam eos soluta iste voluptatibus facilis, eveniet tempora vero ex fugit laudantium voluptates ab explicabo porro dignissimos, quia iure quod esse nemo? Sed deserunt vel nam labore odio. </p>
+                      <a href="" class="hero-btn about-btn" >EXPLORE NOW</a>
+                  </div>
+                  <div class="about-col">
+                        <img src="Images/about/About 1.webp" alt="">
+                  </div>
+            </div>
+     </section>
+
+
+
+      <!-------footer------>
+
+    <section class="footer">
+        <h4>About Us </h4>
+        
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, doloribus temporibus laboriosam nesciunt non accusantium <br> obcaecati maiores ipsum numquam omnis placeat cum, dicta necessitatibus saepe?</p>
+        <div class="icons">
+              <i class="fa fa-facebook"></i>
+              <i class="fa fa-twitter"></i>
+              <i class="fa fa-instagram"></i>
+              <i class="fa fa-linkedin"></i>
+              <p id="footer"> © 2022 made by gmrakib2001 </p>
+        </div>
+</section>
+
+
+
+
+
+
+
+
+
+<!------javascript for toggle menue------>
+<script>
+     var navLinks = document.getElementById("navLinks");
+
+     function showMenu (){
+          navLinks.style.right = "0";
+     }
+
+     function hideMenu (){
+          navLinks.style.right = "-200px";
+     }
+</script>
+    
+</body>
+</html>

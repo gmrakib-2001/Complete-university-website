@@ -312,6 +312,64 @@ h3{
     font-size: 12px;
 }
 
+
+
+
+/*---------about page ------*/
+
+.sub-header{
+    min-height: 50vh;
+    width: 100% ;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background:linear-Gradient(rgba(1, 18, 60, 0.9),rgba(7, 27, 81, 0.7)),url(Images/about/Display\ 2.jpg);
+   
+   
+}
+.about-text h1{
+    color:darkorange;
+    font-size: 34px;
+    font-weight: bold;
+
+}
+.about-text{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.about-col img{
+      width: 100%;
+      border-radius: 10px;
+}
+.about-col h1{
+    padding-top: 0;
+
+}
+.about-col p{
+    padding: 15px 0 65px;
+}
+.about-btn {
+       color: darkorange;
+}
+.about-btn:hover{
+    color: #fff;
+}
+
+
 /*---- media quary ------*/
 
 @media(max-width: 700px){
@@ -357,6 +415,9 @@ h3{
       .cta h1{
           font-size: 20px ;
       }
+      .about-text h1{
+        font-size: 20px ;
+    }
 }
 
 @media(min-width: 700px){
@@ -366,6 +427,7 @@ h3{
     .cta h1{
         font-size: 30px ;
     }
+    
 }
 @media(min-width: 950px){
     .text-box h1{
