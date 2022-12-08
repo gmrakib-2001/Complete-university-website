@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete University website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;0,800;0,900;1,400&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
+
+    
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="sub-header" >
+        <Nav>
+            
+            <a id="LOGO" href="index.html">UV <span id="logo-color">LOGO</span> </a>
+             <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" aria-hidden="true"onclick="hideMenu()"></i>
+                  <ul >
+                    <li> <a href="index.html">HOME</a> </li>
+                    <li> <a href="about.html">ABOUT</a> </li>
+                    <li> <a href="course.html">COURSE</a> </li>
+                    <li> <a href="blog.html">BLOG</a>   </li>
+                    <li> <a href="contact.html">CONTACT</a> </li>
+                  </ul>
+             </div>
+             <i class="fa fa-bars" aria-hidden="true"onclick="showMenu()"></i>
+        </Nav>
+
+          
+          <div class="about-text">
+            <h1>Contact Us</h1>
+          </div>
+
+     </div>
+
+     <!----------Contact Us ---------->
+
+
+     <section  class="loaction">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.037897915639!2d90.38847081458445!3d23.888274789413064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c469610d01b9%3A0xaa41c726134f443b!2z4KaH4Kao4KeN4Kaf4Ka-4Kaw4Kao4KeN4Kav4Ka-4Ka24Kao4Ka-4KayIOCmh-CmieCmqOCmv-CmreCmvuCmsOCnjeCmuOCmv-Cmn-CmvyDgpoXgpqsg4Kas4Ka_4Kac4Kao4KeH4Ka4IOCmj-Cml-CnjeCmsOCmv-CmleCmvuCmsuCmmuCmvuCmsCDgpoXgp43gpq_gpr7gpqjgp43gpqEg4Kaf4KeH4KaV4Kao4KeL4Kay4Kac4Ka_!5e0!3m2!1sbn!2sbd!4v1670468462618!5m2!1sbn!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </section>
+     <section class="contact-us">
+              <div class="row">
+                <div class="contact-col">
+                    
+                   <div>
+                    <i class="fa fa-home"></i> 
+                    <span>    
+                        <h5>Road Name, Building Name </h5>
+                        <p>City,Area,Full Adress details</p>
+                    </span> 
+                   </div>
+                  
+                    <div>
+                        <i class="fa fa-phone"></i> 
+                        <span>
+                            <h5>+880-16********</h5>
+                            <p>Monday to Wednesday,10:00 AM to 10:00 PM</p>
+                        </span>
+                    </div>
+                  
+                   <div>
+                    <i class="fa fa-envelope-o"></i> 
+                    <span>
+                        <h5>gmrakib2001@gmail.com</h5>
+                        <p>E-mail Us for Any query </p>
+                    </span> 
+                   </div>
+                
+              </div>
+              <div class="contact-col">
+                   <form action="Form-handler.php" method="post">
+                         <input type="text" name="name" placeholder="Enter your name" required>
+                         <input type="email" name="email" placeholder="Enter your email adress" required>
+                         <input type="text" name="Subject" placeholder="Enter your Subject" required>
+                         <textarea rows="8" name="Message" placeholder="Massage" required></textarea>
+                         <button type="submit" class="hero-btn about-btn"> SEND MESSAGE</button>
+                   </form>
+              </div>
+             
+     </section>
+     
+
+
+      <!-------footer------>
+
+    <section class="footer">
+        <h4>About Us </h4>
+        
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, doloribus temporibus laboriosam nesciunt non accusantium <br> obcaecati maiores ipsum numquam omnis placeat cum, dicta necessitatibus saepe?</p>
+        <div class="icons">
+              <i class="fa fa-facebook"></i>
+              <i class="fa fa-twitter"></i>
+              <i class="fa fa-instagram"></i>
+              <i class="fa fa-linkedin"></i>
+              <p id="footer"> © 2022 made by gmrakib2001 </p>
+        </div>
+</section>
+
+
+
+
+
+
+
+
+
+<!------javascript for toggle menue------>
+<script>
+     var navLinks = document.getElementById("navLinks");
+
+     function showMenu (){
+          navLinks.style.right = "0";
+     }
+
+     function hideMenu (){
+          navLinks.style.right = "-200px";
+     }
+</script>
+    
+</body>
+</html>
